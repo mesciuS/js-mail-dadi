@@ -5,6 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mail dadi</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-bottom: 100px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+
+            gap: 30px;
+        }
+
+        #rndElUno, #rndElDue {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100px;
+            height: 100px;
+
+            border: 1px solid black;
+        }
+
+
+    </style>
 </head>
 
 
@@ -15,7 +50,12 @@
 
     <h1 id="result"></h1>
 
+    <div class="container">
+        <div id="rndElUno"></div>
+        <div id="rndElDue"></div>
+    </div>
 
+    <h1 id="dice-result"></h1>
     
     <script type="text/javascript" src="js/script.js"></script>
 </body>

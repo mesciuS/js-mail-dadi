@@ -1,7 +1,7 @@
 
 
 
-
+// ESERCIZIO UNO
 
 let myArray = ["mail@uno.com", "mail@due.com", "mail@tre.com", "mail@quattro.com"];
 
@@ -36,3 +36,29 @@ userInput.addEventListener("click", function() {
     }
 
 });
+
+
+// ESERCIZIO DUE
+
+let diceOne = document.getElementById("rndElUno");
+
+let diceTwo = document.getElementById("rndElDue");
+
+let diceResult = document.getElementById("dice-result");
+
+function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+
+  }
+  
+  let rndOne = Math.floor(Math.random() * 6) + 1
+  diceOne.innerHTML = (rndOne)
+  let rndTwo = Math.floor(Math.random() * 6) + 1
+  diceTwo.innerHTML = (rndTwo)
+
+  if(rndOne > rndTwo) {
+    diceResult.innerHTML = ("YOU WIN");
+  }
+  else {
+    diceResult.innerHTML = ("YOU LOSE");
+  }
